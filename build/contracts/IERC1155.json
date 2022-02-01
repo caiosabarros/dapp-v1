@@ -3186,8 +3186,8 @@
     "version": "0.8.2+commit.661d1103.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "3.4.3",
-  "updatedAt": "2022-01-30T22:47:17.504Z",
+  "schemaVersion": "3.4.4",
+  "updatedAt": "2022-02-01T20:06:28.780Z",
   "devdoc": {
     "details": "Required interface of an ERC1155 compliant contract, as defined in the https://eips.ethereum.org/EIPS/eip-1155[EIP]. _Available since v3.1._",
     "events": {
