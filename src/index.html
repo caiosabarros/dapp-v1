@@ -11,45 +11,109 @@
 </head>
 <body class="container">
 
-    <h1 class="page-header">Register information at Blockchain - RSK network</h1>
-
-    <div class="row">
-      <div>
-        <h3 class="sub-header">Set information</h3>
-        <form class="form-inline" role="form">
-          <div class="form-group">
-            <table>
-              <tr>
-                <td><label for="newInfo">Info:</label> </td>
-                <td>
-                  <input class="form-control" id="newInfo">
-                </td>
-              </tr>
-            </table>
+    <h1 class="page-header">Go Tokens Store</h1>
+      <div class="col">
+        <div class="row">
+          <div>
+            <h3 class="sub-header">Comprar Token</h3>
+            <form class="form-inline" role="form">
+              <div class="form-group">
+                <table>
+                  <tr>
+                    <td><label for="newInfo"></label> </td>
+                    <td>
+                      <input class="form-control" id="newInfo" placeholder="item">
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <a href="#" onclick="buyToken()" class="btn btn-primary">Comprar</a>
+            </form>
           </div>
-          <a href="#" onclick="registerSetInfo()" class="btn btn-primary">Set</a>
-        </form>
-      </div>
-    </div>
-
-    <div class="row">
-      <div>
-        <h3 class="sub-header">Get last information saved</h3>
-        <form class="form-inline" role="form">
-          <a href="#" onclick="registerGetInfo()" class="btn btn-primary">Get</a>
-          <div class="form-group">
-            <table>
-              <tr>
-                <td>Info:</td>
-                <td>
-                  <label id="lastInfo">
-                </td>
-              </tr>
-            </table>
+        </div>
+      
+        <div class="row">
+          <div>
+            <h3 class="sub-header">Informacoes do Contrato</h3>
+            <form class="form-inline" role="form">
+              <a href="#" onclick="balance()" class="btn btn-primary">Ver Saldo</a>
+              <div class="form-group">
+                <table>
+                  <tr>
+                    <td>Saldo:</td>
+                    <td>
+                      <label id="saldo">
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </form>
           </div>
-        </form>
+        </div>      
+      
+        <div class="row">
+          <div>
+            <h3 class="sub-header">Sacar Saldo do Contrato</h3>
+            <form class="form-inline" role="form">
+              <a href="#" onclick="withdrawFunds()" class="btn btn-primary">Sacar</a>
+              <div class="form-group">
+                <table>
+                  <tr>
+                    <td></td>
+                    <td>
+                      <label id="saldo">
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </form>
+          </div>
+        </div> 
+      </div>  
+    
+      <div class="col">
+
+        <div class="row">
+          <div>
+            <h3 class="sub-header">Criar Token(s)</h3>
+            <form class="form-inline" role="form">
+              <div class="form-group">
+                <table>
+                  <tr>
+                    <td><label for="newInfo"></label> </td>
+                    <td>
+                      <input class="form-control" id="newInfo" placeholder="conta, quantidade, TokenURI">
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <a href="#" onclick="mint()" class="btn btn-primary">Comprar</a>
+            </form>
+          </div>
+        </div>        
+
+        <div class="row">
+          <div>
+            <h3 class="sub-header">Criar Token(s)</h3>
+            <form class="form-inline" role="form">
+              <div class="form-group">
+                <table>
+                  <tr>
+                    <td><label for="newInfo"></label> </td>
+                    <td>
+                      <input class="form-control" id="newInfo" placeholder="conta, quantidade, TokenURI">
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <a href="#" onclick="mint()" class="btn btn-primary">Comprar</a>
+            </form>
+          </div>
+        </div>    
+
+
       </div>
-    </div>
+    
 
 </body>
 </html>

@@ -36,7 +36,9 @@ console.log(contractAddress);
 
 var contract = new web3.eth.Contract(contractJSON.abi, contractAddress);
 
-
+function balance(){
+    saldo = $("#")
+}
 
 
 
